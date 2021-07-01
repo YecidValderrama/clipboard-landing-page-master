@@ -53,6 +53,7 @@ p{
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
+    align-items: center;
 }
 .container-btn-mac{
     width: 100%;
@@ -74,7 +75,6 @@ h2{
 }
 .blacklists{
     margin-top: 60px;
-    display: flex;
     flex-direction: column;
 }
 .icon-blacklist, .icon-text, .icon-preview{
@@ -84,9 +84,6 @@ h2{
 }
 h3{
     text-align: center;
-}
-.business{
-
 }
 .google, .ibm ,.microsoft, .hp, .vector{
     display: flex;
@@ -121,4 +118,83 @@ footer{
     padding: 50px;
     display: flex;
     justify-content: space-around;
+}
+@media (min-width: 768px){
+    body{
+        font-size: 18px; 
+        width: 100%;
+        height: 100vh;  
+        background: url(/images/bg-header-desktop.png)no-repeat;
+        background-size: cover;
+        font-family: 'Bai Jamjuree', sans-serif;
+        /* padding: 20px; */
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .container-btn-ios{
+        width: 200px;
+        
+    }
+    .container-btn-mac{
+        width: 200px;
+    }
+    .keep-track{
+        display: flex;
+    }
+    .computer-description{
+        font-size: 0.9rem;
+        width: 70%;
+    }
+    .computer-description p, h2{
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .computer-description h2{
+        padding-bottom: 0;
+        padding-left: 20px;
+    }
+    .anywhere h2, .workflow h2, .download h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .icons{
+        display: flex;
+    }
+    .blacklists{
+        margin:0;
+    }
+    .icon-blacklist img{
+        width: 36px;
+    }
+    .business{
+        display: flex;
+        justify-content: space-around;
+    }
+    .business img{
+         width: 95%;
+         height: 70%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .link-footer ul li{
+        display: inline-block;
+        margin: 5px 20px;
+    }
+    .logo-footer, .logo-footer img{
+        margin: 0;
+    }
+    .social-media{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        padding: 0;
+    }
 }
